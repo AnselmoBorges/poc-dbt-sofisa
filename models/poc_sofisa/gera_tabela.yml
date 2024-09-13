@@ -1,0 +1,3 @@
+-- Faz a query do arquivo CSV
+select * from
+csv.`/Volumes/engenharia_nprd/bronze/sandbox_vol/dados_salic.csv`
