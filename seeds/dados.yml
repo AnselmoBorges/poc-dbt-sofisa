@@ -1,0 +1,35 @@
+version: 2
+
+seeds:
+  - name: dados
+    description: "Tabela de dados de incentivo cultural na camada dev_b"
+    columns:
+      - name: CNPJCPF
+        description: "CNPJ ou CPF do incentivador"
+        tests:
+          - not_null
+          - unique
+      - name: Incentivador
+        description: "Nome do incentivador"
+        tests:
+          - not_null
+      - name: NRO_Projeto
+        description: "Número do projeto"
+        tests:
+          - not_null
+      - name: Nome_do_Projeto
+        description: "Nome do projeto"
+        tests:
+          - not_null
+      - name: UF_do_Projeto
+        description: "Unidade Federativa do projeto"
+        tests:
+          - not_null
+      - name: Vl_Incentivo_em_reais
+        description: "Valor do incentivo em reais"
+        tests:
+          - not_null
+      - name: ano
+        description: "Ano do incentivo"
+        tests:
+          - not_null
