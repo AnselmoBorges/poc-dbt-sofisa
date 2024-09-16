@@ -1,12 +1,6 @@
-{{ config(
-    materialized='table',
-    schema='b'
-) }}
+{{ config(materialized="table", schema="b") }}
 
-WITH seed AS (
-    SELECT *
-    FROM engenharia_nprd.dev.dados_salic
-)
+with seed as (select * from engenharia_nprd.dev.dados_salic)
 
-SELECT *
-FROM seed
+select *
+from seed
