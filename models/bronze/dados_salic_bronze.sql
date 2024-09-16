@@ -2,8 +2,7 @@
 
 WITH seed AS (
     SELECT *
-    FROM {{ ref('dados') }}  -- Referencia a tabela seed 'dados'
-)
+    FROM {{ ref('dados') }})
 
 select *
 from seed
