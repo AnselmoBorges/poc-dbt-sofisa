@@ -39,3 +39,15 @@ models:
   poc_dbt_sofisa:
     bronze:
       +materialized: table
+
+seeds:
+    +schema:
+    dados:
+      +column_types:
+        CNPJCPF: string
+        Incentivador: string
+        NRO_Projeto: string
+        Nome_do_Projeto: string
+        UF_do_Projeto: string
+        Vl_Incentivo_em_reais: float
+        ano: int
