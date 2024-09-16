@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: dados_salic
-    description: "Tabela de dados de incentivo cultural"
+    description: "Tabela de dados de incentivo cultural na camada dev_b"
     columns:
       - name: CNPJCPF
         description: "CNPJ ou CPF do incentivador"
