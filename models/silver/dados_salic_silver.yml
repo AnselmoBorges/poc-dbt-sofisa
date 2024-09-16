@@ -1,36 +1,36 @@
 version: 2
 
 models:
-  - name: dados_salic
-    description: "Tabela de dados de incentivo cultural na camada dev_b"
-    path: "models/silver/dados_salic.sql"
+  - name: dados_salic_silver
+    description: "Tabela de dados de incentivo cultural na camada dev_b, atualizados com o cabeçalho maiusculo, string em maiusculo e colocando 2 casas depois da virgula no valor."
+    alias: dados_salic
     columns:
       - name: CNPJCPF
         description: "CNPJ ou CPF do incentivador"
         tests:
           - not_null
           - unique
-      - name: Incentivador
+      - name: INCENTIVADOR
         description: "Nome do incentivador"
         tests:
           - not_null
-      - name: NRO_Projeto
+      - name: NRO_PROJETO
         description: "Número do projeto"
         tests:
           - not_null
-      - name: Nome_do_Projeto
+      - name: NOME_PROJETO
         description: "Nome do projeto"
         tests:
           - not_null
-      - name: UF_do_Projeto
+      - name: UF_PROJETO
         description: "Unidade Federativa do projeto"
         tests:
           - not_null
-      - name: Vl_Incentivo_em_reais
+      - name: VL_INCENTIVO
         description: "Valor do incentivo em reais"
         tests:
           - not_null
-      - name: ano
+      - name: ANO
         description: "Ano do incentivo"
         tests:
           - not_null

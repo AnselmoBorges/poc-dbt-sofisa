@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: inc_empresa
+    description: "Tabela de dados com o top 5 total de incentivos"
+    columns:
+      - name: Incentivador
+        description: "Nome do incentivador"
+        tests:
+          - not_null
+      - name: TOTAL_INCENTIVO
+        description: "Soma de contribuição do incentivados"
+        tests:
+          - not_null
