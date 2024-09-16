@@ -1,6 +1,6 @@
 version: 2
 
-models:
+seeds:
   - name: dados_salic
     description: "Tabela de dados de incentivo cultural"
     columns:
