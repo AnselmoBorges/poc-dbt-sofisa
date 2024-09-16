@@ -1,4 +1,4 @@
-{{ config(materialized="table", schema="b") }}
+{{ config(materialized="table", schema="b", alias="dados_salic") }}
 
 WITH seed AS (
     SELECT *

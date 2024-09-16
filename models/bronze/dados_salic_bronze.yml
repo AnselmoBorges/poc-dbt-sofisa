@@ -1,9 +1,9 @@
 version: 2
 
 models:
-  - name: dados_salic
+  - name: dados_salic_bronze
     description: "Tabela de dados Bronze com base nos dados staging"
-    path: "models/bronze/dados_salic.sql"
+    alias: "dados_salic"
     columns:
       - name: CNPJCPF
         description: "CNPJ ou CPF do incentivador"
