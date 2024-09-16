@@ -6,9 +6,9 @@ models:
     columns:
       - name: UF_PROJETO
         description: "Estado dos projetos"
-        tests:
+        data_tests:
           - not_null
       - name: TOTAL_INCENTIVO
         description: "Total de incentivo"
-        tests:
+        data_tests:
           - not_null

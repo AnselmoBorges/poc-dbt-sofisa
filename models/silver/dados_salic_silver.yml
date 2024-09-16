@@ -7,29 +7,29 @@ models:
     columns:
       - name: CNPJCPF
         description: "CNPJ ou CPF do incentivador"
-        tests:
+        data_tests:
           - not_null
       - name: INCENTIVADOR
         description: "Nome do incentivador"
-        tests:
+        data_tests:
           - not_null
       - name: NRO_PROJETO
         description: "Número do projeto"
-        tests:
+        data_tests:
           - not_null
       - name: NOME_PROJETO
         description: "Nome do projeto"
-        tests:
+        data_tests:
           - not_null
       - name: UF_PROJETO
         description: "Unidade Federativa do projeto"
-        tests:
+        data_tests:
           - not_null
       - name: VL_INCENTIVO
         description: "Valor do incentivo em reais"
-        tests:
+        data_tests:
           - not_null
       - name: ANO
         description: "Ano do incentivo"
-        tests:
+        data_tests:
           - not_null
