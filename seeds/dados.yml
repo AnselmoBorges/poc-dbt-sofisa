@@ -2,7 +2,7 @@ version: 2
 
 seeds:
   - name: dados
-    description: "Tabela de dados de incentivo cultural na camada dev_b"
+    description: "Tabela de dados de incentivo cultural em uma camada de staging"
     columns:
       - name: CNPJCPF
         description: "CNPJ ou CPF do incentivador"
