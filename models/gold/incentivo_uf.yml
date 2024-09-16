@@ -4,7 +4,7 @@ models:
   - name: incentivo_uf
     description: "Tabela com os top 5 estaddos incentivadores"
     columns:
-      - name: UF_INCENTIVO
+      - name: UF_PROJETO
         description: "Estado dos projetos"
         tests:
           - not_null
