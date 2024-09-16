@@ -9,7 +9,6 @@ models:
         description: "CNPJ ou CPF do incentivador"
         tests:
           - not_null
-          - unique
       - name: Incentivador
         description: "Nome do incentivador"
         tests:
