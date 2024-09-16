@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: incentivo_uf
+    description: "Tabela com os top 5 estaddos incentivadores"
+    columns:
+      - name: UF_INCENTIVO
+        description: "Estado dos projetos"
+        tests:
+          - not_null
+      - name: TOTAL_INCENTIVO
+        description: "Total de incentivo"
+        tests:
+          - not_null

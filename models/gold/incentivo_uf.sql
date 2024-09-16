@@ -1,16 +1,16 @@
 {{ config(materialized="view", schema="g") }}
 
-WITH INC_EMPRESA AS (
+WITH INCENTIVO_UF AS (
     SELECT 
-        INCENTIVADOR,
+        UF_INCENTIVO,
         SUM(VL_INCENTIVO) AS TOTAL_INCENTIVO
     FROM {{ ref('dados_salic_silver') }}
     GROUP BY
-        INCENTIVADOR
+        UF_INCENTIVO
     ORDER BY
         TOTAL_INCENTIVO DESC
     LIMIT 5
 )
 
 select *
-from INC_EMPRESA
+from INCENTIVO_UF

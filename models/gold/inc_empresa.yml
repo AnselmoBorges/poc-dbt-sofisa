@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: inc_empresa
+    description: "Tabela com os top 5 maiores incentivadores"
+    columns:
+      - name: INCENTIVADOR
+        description: "Incentivador dos projetos"
+        tests:
+          - not_null
+      - name: TOTAL_INCENTIVO
+        description: "Total de incentivo"
+        tests:
+          - not_null
