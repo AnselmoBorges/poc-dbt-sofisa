@@ -1,4 +1,4 @@
-{{ config(materialized="table", schema="s") }}
+{{ config(materialized="table", schema="s", alias="dados_salic") }}
 
 WITH SILVER AS (
     SELECT 
@@ -9,7 +9,7 @@ WITH SILVER AS (
         UPPER(UF_do_Projeto) AS UF_PROJETO,
         ROUND(Vl_Incentivo_em_reais, 2) AS VL_INCENTIVO,
         ano AS ANO
-    FROM {{ ref('bronze.dados_salic') }}  -- Referencia a tabela seed 'dados'
+    FROM {{ ref('dados_salic_bronze') }} 
 )
 
 select *
