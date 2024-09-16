@@ -1,11 +1,11 @@
 {{ config(
     materialized='table',
-    schema='b'
+    schema='dev'
 ) }}
 
 WITH seed AS (
     SELECT *
-    FROM engenharia_nprd.dev.dados_salic
+    FROM {{ ref('dados_salic') }}
 )
 
 SELECT *
